@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Poppins',sans-serif;
+}
+.chat-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(153, 153, 151);
+  width: 100%;
+}
+.message-container{
+  background-color: orchid;
+  height: 90vh;
+  width: 30% !important;
+  position: relative;
+}
+.title{
+  text-align: center;
+  margin: 12px 0;
+}
+.msg-box{
+  /* background-color: crimson; */
+  position: absolute;
+  bottom: 30px;
+  width: 95%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.type-msg{
+  width: 90%;
+  height: 100%;
+  padding: 0 12px;
+  outline: none;
+}
+.send-msg{
+  height: 100%;
+  padding: 0 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: rgb(41, 113, 85);
+  color: #fff;
+  border: none;
+}
+.start-chat{
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.username{
+  height: 100%;
+  width: 200px;
+  padding: 0 10px;
+  outline: none;
+  margin-right: 5px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.chat-btn{
+  height: 100%;
+  padding: 0 13px;
+  background-color: rgb(255, 141, 2);
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid  rgb(255, 141, 2);
+  margin-left: 5px;
+}
+.message-container{
+  background-color: rgb(200, 194, 194);
+  /* height: 90vh; */
+  width: 100%;
+  padding:0 10px;
+}
+
+.single{
+  background-color: rgb(57, 56, 86);
+  width: max-content;
+  /* white-space: nowrap; */
+  margin-bottom: 10px; 
+  padding: 2px 7px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  color: #fff;
+  min-width: 70px;
+  max-width: 100%;
+ 
+}
+.user-name{
+  color: rgb(231, 231, 231);
+  text-transform: capitalize;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.user-msg{
+  margin-bottom: 4px;
+  font-size: 19px;
+  
+}
+.msg-time{
+  font-size: 10px;
+  margin-right: auto;
+  color: rgb(231, 231, 231);
+  margin-top: 0px;
+  text-align: right;
+}
+.my-msg{
+  position: relative;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+.my-msg-and{
+  background-color: rgb(127, 0, 91);
+  padding-top:4px ;
+  padding-bottom: 4px;
+  border-radius: 8px;
+  border-bottom-right-radius: 0px;
+}
+.user-join{
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(41, 113, 85);
+  font-weight: 600;
+}
+.all-messages{
+  max-height: 460px;
+  overflow-y: scroll;
+ 
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+@media(max-width:400px){
+  .message-container{
+    width: 95% !important;
+  }
+  .all-messages{
+    max-height: calc(100vh - 170px);   
+  }
+}
